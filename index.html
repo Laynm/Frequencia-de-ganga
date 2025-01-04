@@ -4,17 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frequência de Ganga</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <!-- Cabeçalho -->
-    <header>
+    <header class="Cabecalho">
         <h1>Frequência de Ganga</h1>
         <nav>
             <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="#sobre" class="menu-link">Sobre</a></li>
+                <li><a href="#servicos" class="menu-link">Serviços</a></li>
+                <li><a href="#cursos" class="menu-link">Cursos</a></li>
+                <li><a href="#contato" class="menu-link">Contato</a></li>
+                <li><a href="#depoimentos" class="menu-link">Depoimentos</a></li>
             </ul>
         </nav>
     </header>
@@ -22,16 +27,18 @@
     <!-- Seção Principal -->
     <main>
         <!-- Seção Hero -->
-        <section id="hero">
+        <section class="hero">
             <h2>Explore os Mistérios das Cartas e da Espiritualidade</h2>
             <p>Conecte-se com sua essência e encontre respostas através do Tarô, Baralho Cigano e Baralho de Pomba Gira.</p>
             <a href="#servicos" class="btn">Agende uma Leitura</a>
         </section>
 
         <!-- Sobre -->
-        <section id="sobre">
+        <section class="sobre">
+            <img src="/img/cartas-rosto.jpeg" alt="foto do cartomanete Vinicius Sanches">
+        
             <h2>Sobre Mim</h2>
-            <p>Olá, meu nome é Vinícius. Sou tarólogo desde 2020 e dedico minha vida a ajudar pessoas a encontrar clareza, propósito e caminhos mais iluminados por meio da leitura das cartas. Trabalho com o Baralho Cigano, um oráculo poderoso que nos conecta ao universo e à sabedoria ancestral, proporcionando insights profundos e orientações preciosas.</p>
+            <p>Olá, meu nome é Vinícius Sanches. Sou tarólogo desde 2020 e dedico minha vida a ajudar pessoas a encontrar clareza, propósito e caminhos mais iluminados por meio da leitura das cartas. Trabalho com o Baralho Cigano, um oráculo poderoso que nos conecta ao universo e à sabedoria ancestral, proporcionando insights profundos e orientações preciosas.</p>
             <p>Além do meu trabalho como tarólogo, sou médium e praticante de bruxaria, utilizando minha espiritualidade para auxiliar aqueles que buscam equilíbrio, transformação e conexão com sua essência. Minha abordagem é acolhedora e voltada para o crescimento pessoal, respeitando as necessidades e particularidades de cada cliente.</p>
             <p>Também sou professor e ministro cursos de Baralho Cigano, compartilhando todo o conhecimento e a experiência que adquiri ao longo dos anos. Meus cursos são pensados para quem deseja aprender a interpretar as cartas de maneira intuitiva e prática, desenvolvendo habilidades para uso pessoal ou profissional.</p>
             <p>Seja por meio de uma consulta ou do ensino, meu objetivo é trazer luz e direcionamento para quem cruza meu caminho. Vamos juntos desbravar o universo das cartas e encontrar as respostas que você procura?</p>
@@ -39,7 +46,7 @@
         </section>
 
         <!-- Serviços -->
-        <section id="servicos">
+        <section class="servicos">
             <h2>Serviços</h2>
 
             <h3>Tarô</h3>
@@ -99,10 +106,9 @@
     </main>
 
     <!-- Rodapé -->
-    <footer id="rodape">
+    <footer class="rodape">
         <p>&copy; 2025 Frequência de Ganga. Todos os direitos reservados.</p>
         <p>Conecte-se nas redes sociais: <a href="#">Instagram</a> | <a href="#">Facebook</a></p>
     </footer>
 </body>
 </html>
-
