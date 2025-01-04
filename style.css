@@ -4,7 +4,6 @@
 /* Estilo geral do corpo da página */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #500106; /* Fundo escuro */
     color: #fff;
     margin: 0;
     padding: 0;
@@ -13,75 +12,72 @@ body {
 /* Cabeçalho */
 header.Cabecalho {
     display: flex;
-    justify-content: space-between; /* Coloca o título à esquerda e o menu à direita */
-    align-items: center; /* Alinha verticalmente os itens */
-    background-color: #500106; /* vermelho  */
-    padding: 10px 40px; /* Reduzido o padding para dar mais espaço */
-    position: fixed;  /* Fixa o menu no topo */
+    justify-content: space-between;
+    align-items: center;
+    background-color: #500106; /* Vermelho */
+    padding: 10px 40px;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000; /* Garante que o menu fique sobre o conteúdo */
+    z-index: 1000;
     box-sizing: border-box;
+    margin-bottom: 0; /* Remove qualquer margem */
 }
 
 header.Cabecalho h1 {
-    font-family: 'Mystery Quest', cursive; /* Fonte Mystery Quest */
-    font-size: 48px;
-    color: #e4d1b9; /* Cor do nome "Frequência de Ganga" ajustada para o tom de bege */
-    margin: 0; /* Remove margens para melhor alinhamento */
-    flex-shrink: 0; /* Evita que o título encolha */
+    font-family: 'Mystery Quest', cursive;
+    font-size: 36px;
+    color: #e4d1b9; /* Tom de bege */
+    margin: 0; /* Remove margem padrão */
+    flex-shrink: 0;
 }
 
 header ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex; /* Exibe o menu em linha */
-    flex-wrap: wrap;  /* Permite que os itens que não cabem em uma linha sejam movidos para a linha seguinte */
-    justify-content: flex-end; /* Garante que o menu fique à direita */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 header ul li {
-    margin-left: 15px; /* Espaço entre os itens do menu */
+    margin-left: 30px;
 }
 
 header ul li a {
     text-decoration: none;
-    color: #e4d1b9; /* Tom de bege mais claro */
-    font-size: 16px; /* Reduzido o tamanho da fonte para não ocupar tanto espaço */
-    padding: 5px 10px; /* Adiciona espaço dentro de cada item */
+    color: #e4d1b9;
+    font-size: 16px;
+    padding: 5px 10px;
 }
 
 header ul li a:hover {
-    color: #d4af37; /* Muda para dourado no hover */
+    color: #d4af37; /* Dourado */
 }
 
-/* Para garantir que o conteúdo não seja escondido pelo menu fixo */
-main {
-    margin-top: 120px;  /* Distância para que o conteúdo comece após o menu */
-}
-
-/* Estilo para a seção hero */
+/* Seção Hero */
 .hero {
-    background-image: url('/img/imagemhero.png');  /* Caminho da imagem */
+    background-image: url('/img/imagemhero.png');
     text-align: center;
     background-color: #500106;
     color: #e4d1b9;
-    padding: 60px 20px;
+    padding: 100px 20px;
+    margin: 0; /* Remove qualquer margem */
 }
 
 .hero h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+    font-size: 32px;
+    margin-bottom: 30px;
 }
 
 .hero p {
     font-size: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
-.hero .btn {
+.hero .botao-leitura {
     padding: 10px 20px;
     background-color: #d4af37; /* Dourado */
     color: #fff;
@@ -90,72 +86,77 @@ main {
     border-radius: 5px;
 }
 
-.hero .btn:hover {
+.hero .botao-leitura:hover {
     background-color: #f39c12;
 }
 
-/* Estilo para a seção sobre */
+/* Seção Sobre */
 .sobre {
     padding: 40px 20px;
     background-color: #121315;
     color: #e4d1b9;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .sobre img {
     border-radius: 50%;
-    width: 150px; /* Tamanho ajustado da imagem */
+    width: 150px;
     height: 150px;
-    margin-right: 20px; /* Espaço entre a imagem e o texto */
+    margin-right: 20px;
 }
 
 .sobre h2 {
     font-size: 30px;
     margin-bottom: 20px;
-    color: #e4d1b9;
 }
 
-/* Estilo para a seção de serviços */
+/* Seção de Serviços */
 .servicos {
     padding: 40px 20px;
-    background-color: #2c3e50;
+    background-color: #2a0407;
 }
 
 .servicos h2 {
-    font-size: 30px;
+    font-size: 28px;
     margin-bottom: 20px;
+    color: #e4d1b9;
+    text-align: center;
 }
 
 .servicos h3 {
-    font-size: 24px;
-    margin-top: 30px;
+    font-size: 22px;
+    margin-top: 20px;
     color: #d4af37;
 }
 
 .servicos ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .servicos ul li {
     font-size: 18px;
+    margin-bottom: 10px;
+    color: #e4d1b9;
 }
 
 /* Rodapé */
 footer.rodape {
-    background-color: #500106;
+    background-color: #121315;
     text-align: center;
     padding: 20px 0;
-    color: #e4d1b9; /* Cor do texto do rodapé ajustada para o tom de bege */
+    color: #e4d1b9;
 }
 
 footer.rodape p {
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 footer.rodape a {
-    color: #e4d1b9; /* Cor do link no rodapé ajustada para o tom de bege */
+    color: #e4d1b9;
     text-decoration: none;
 }
 
