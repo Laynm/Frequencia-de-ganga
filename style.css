@@ -15,13 +15,14 @@ header.Cabecalho {
     justify-content: space-between;
     align-items: center;
     background-color: #500106; /* Vermelho */
-    padding: 10px 40px;
+    padding: 15px 60px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
     box-sizing: border-box;
+    border-radius: 0 0 30px 30px;
 }
 
 header.Cabecalho h1 {
@@ -145,6 +146,8 @@ header ul li a:hover {
     margin-bottom: 20px;
     color: #e4d1b9;
     text-align: center;
+    font-family: 'Mystery Quest', cursive;
+
 }
 
 .servicos h3 {
