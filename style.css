@@ -22,7 +22,6 @@ header.Cabecalho {
     width: 100%;
     z-index: 1000;
     box-sizing: border-box;
-    margin-bottom: 0; /* Remove qualquer margem */
 }
 
 header.Cabecalho h1 {
@@ -51,6 +50,8 @@ header ul li a {
     color: #e4d1b9;
     font-size: 16px;
     padding: 5px 10px;
+    font-family: 'Mystery Quest', cursive;
+
 }
 
 header ul li a:hover {
@@ -92,25 +93,46 @@ header ul li a:hover {
 
 /* Seção Sobre */
 .sobre {
-    padding: 40px 20px;
+    padding: 120px 150px;
     background-color: #121315;
     color: #e4d1b9;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+    display: flex; /* Flexbox para organizar a imagem e o conteúdo ao lado */
+    flex-direction: row; /* Organiza imagem e conteúdo na mesma linha */
+    align-items: flex-start; /* Alinha a imagem e o conteúdo ao topo */
+    justify-content: flex-start;
+    gap: 150px; /* Espaçamento entre a imagem e o conteúdo */
 }
 
 .sobre img {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    margin-right: 20px;
+    width: 300px;
+    height: 300px;
+}
+
+.sobre .conteudo-sobre {
+    display: flex;
+    flex-direction: column; /* Coloca o título e os parágrafos em uma coluna */
+    justify-content: flex-start;
 }
 
 .sobre h2 {
     font-size: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    text-align: left; /* Alinha o título à esquerda */
+    margin-top: 0;
+    font-family: 'Mystery Quest', cursive;
+
 }
+
+.sobre p {
+    font-size: 18px;
+    text-align: justify;
+    margin-top: 0; /* Remove margem superior */
+    width: auto; /* Garante que o p não ocupe toda a largura disponível */
+    margin-bottom: 10px; /* Espaçamento entre os parágrafos */
+    margin-top: 10px
+}
+
 
 /* Seção de Serviços */
 .servicos {
