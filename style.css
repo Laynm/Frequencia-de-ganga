@@ -134,38 +134,97 @@ header ul li a:hover {
     margin-top: 10px
 }
 
-
-/* Seção de Serviços */
+/* Seção de Leituras e Orientações */
+/* Seção de Leituras e Orientações - Alternativa Moderna */
 .servicos {
-    padding: 40px 20px;
-    background-color: #2a0407;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #500106, #121315);
+    color: #e4d1b9;
+    text-align: center;
 }
 
 .servicos h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: #e4d1b9;
-    text-align: center;
-    font-family: 'Mystery Quest', cursive;
-
-}
-
-.servicos h3 {
-    font-size: 22px;
-    margin-top: 20px;
+    font-size: 36px;
+    margin-bottom: 50px;
     color: #d4af37;
+    font-family: 'Mystery Quest', cursive;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7); /* Destaque com sombra suave */
 }
 
+/* Categoria de serviços */
+.servicos-categoria {
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: rgba(212, 175, 55, 0.1); /* Fundo dourado translúcido */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Sombra leve */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.servicos-categoria:hover {
+    transform: scale(1.02); /* Leve aumento */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6); /* Destaque na sombra */
+}
+
+.servicos-categoria h3 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #d4af37;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Pequena sombra */
+}
+
+/* Lista de serviços */
 .servicos ul {
     list-style: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
 }
 
 .servicos ul li {
+    background: rgba(255, 255, 255, 0.05); /* Fundo translúcido */
+    padding: 15px 20px;
     font-size: 18px;
-    margin-bottom: 10px;
     color: #e4d1b9;
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Borda sutil */
+    border-radius: 10px;
+    width: 250px; /* Largura fixa */
+    text-align: center;
+    transition: background 0.3s, color 0.3s, transform 0.3s;
+}
+
+.servicos ul li:hover {
+    background: rgba(212, 175, 55, 0.3); /* Destaque dourado */
+    color: #fff;
+    transform: translateY(-10px); /* Elevação */
+}
+
+/* Adicionando um detalhe visual */
+.servicos ul li::before {
+    content: '★'; /* Ícone de estrela */
+    font-size: 20px;
+    color: #d4af37;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Layout geral */
+.servicos .servicos-categoria {
+    max-width: 900px; /* Limita a largura */
+    margin: 0 auto; /* Centraliza */
+}
+
+.servicos ul li span {
+    display: block;
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #d4af37; /* Valor destacado */
 }
 
 /* Rodapé */
