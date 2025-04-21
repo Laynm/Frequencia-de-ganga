@@ -1,104 +1,248 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frequência de Ganga</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="responsivo.css">
-    <link href="https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap" rel="stylesheet">
-</head>
-<body>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/body.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/servicos.css" />
+    <link rel="stylesheet" href="css/sobre.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/responsivo.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- AOS Animation -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- <div id="particles-js"></div> -->
+
     <!-- Cabeçalho -->
-    <header class="Cabecalho">
-        <h1>Frequência de Ganga</h1>
-        <nav class="menu">
-            <ul>
-                <li><a href="#sobre" class="menu-link">Sobre</a></li>
-                <li><a href="#servicos" class="menu-link">Serviços</a></li>
-                <li><a href="#cursos" class="menu-link">Cursos</a></li>
-                <li><a href="#contato" class="menu-link">Contato</a></li>
-                <li><a href="#depoimentos" class="menu-link">Depoimentos</a></li>
-            </ul>
-        </nav>
+    <header class="Cabecalho" data-aos="fade-down">
+      <h1>Frequência de Ganga</h1>
+      <div class="menu-toggle" id="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li><a href="#sobre" class="menu-link">Sobre</a></li>
+          <li><a href="#servicos" class="menu-link">Serviços</a></li>
+          <li><a href="cursos.html" class="menu-link">Cursos</a></li>
+          <li>
+            <a
+              href="https://wa.me/5511939420821?text=Olá!%20Gostaria%20de%20falar%20com%20a%20Frequência%20de%20Ganga%20✨"
+              target="_blank"
+              class="menu-link"
+              >Contato</a
+            >
+          </li>
+          <li><a href="#depoimentos" class="menu-link">Depoimentos</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <!-- Seção Principal -->
+    <!-- Conteúdo principal -->
     <main>
-        <!-- Seção Hero -->
-        <section class="hero">
-            <h2>Explore os Mistérios das Cartas e da Espiritualidade</h2>
-            <p>Conecte-se com sua essência e encontre respostas através do Tarô, Baralho Cigano e Baralho de Pomba Gira.</p>
-            <a href="#servicos" class="botao-leitura">Agende uma Leitura</a>
-        </section>
+      <!-- Hero -->
+      <section class="hero" data-aos="fade-up">
+        <h2>Explore os Mistérios das Cartas e da Espiritualidade</h2>
+        <p>
+          Conecte-se com sua essência e encontre respostas através do Tarô,
+          Baralho Cigano e Baralho de Pomba Gira.
+        </p>
+        <a
+          href="https://wa.me/5511939420821?text=Olá!%20Gostaria%20de%20agendar%20uma%20leitura%20com%20a%20Frequência%20de%20Ganga%20✨"
+          target="_blank"
+          class="botao-leitura"
+          >Agende uma Leitura</a
+        >
+      </section>
 
-        <!-- Sobre -->
-        <section class="sobre">
-            <img src="img/cartas-rosto.jpeg" alt="foto do cartomanete Vinicius Sanches">
-            <div class="conteudo-sobre">
-                <h2>Entre Luz e Sombra: Minha Trilha Espiritual</h2>
-                <p>Olá, meu nome é Vinícius Sanches. Sou tarólogo desde 2020 e dedico minha vida a ajudar pessoas a encontrar clareza, propósito e caminhos mais iluminados por meio da leitura das cartas. Trabalho com o Baralho Cigano, um oráculo poderoso que nos conecta ao universo e à sabedoria ancestral, proporcionando insights profundos e orientações preciosas.</p>
-                <p>Além do meu trabalho como tarólogo, sou médium e praticante de bruxaria, utilizando minha espiritualidade para auxiliar aqueles que buscam equilíbrio, transformação e conexão com sua essência. Minha abordagem é acolhedora e voltada para o crescimento pessoal, respeitando as necessidades e particularidades de cada cliente.</p>
-                <p>Também sou professor e ministro cursos de Baralho Cigano, compartilhando todo o conhecimento e a experiência que adquiri ao longo dos anos. Meus cursos são pensados para quem deseja aprender a interpretar as cartas de maneira intuitiva e prática, desenvolvendo habilidades para uso pessoal ou profissional.</p>
-                <p>Seja por meio de uma consulta ou do ensino, meu objetivo é trazer luz e direcionamento para quem cruza meu caminho. Vamos juntos desbravar o universo das cartas e encontrar as respostas que você procura?</p>
-                <p>Entre em contato comigo e venha descobrir o poder do Baralho Cigano.</p>
-            </div>
-        </section>
+      <!-- Sobre -->
+      <section class="sobre" id="sobre" data-aos="fade-up">
+        <img
+          src="img/cartas-rosto.jpeg"
+          alt="foto do cartomanete Vinicius Sanches"
+        />
+        <div class="conteudo-sobre">
+          <h2>Entre Luz e Sombra: Minha Trilha Espiritual</h2>
+          <p>
+            Olá, meu nome é Vinícius Sanches. Sou tarólogo desde 2020 e dedico
+            minha vida a ajudar pessoas a encontrar clareza, propósito e
+            caminhos mais iluminados por meio da leitura das cartas.
+          </p>
+          <p>
+            Trabalho com o Baralho Cigano, um oráculo poderoso que nos conecta
+            ao universo e à sabedoria ancestral, proporcionando insights
+            profundos e orientações preciosas.
+          </p>
+          <p>
+            Além do meu trabalho como tarólogo, sou médium e praticante de
+            bruxaria, utilizando minha espiritualidade para auxiliar aqueles que
+            buscam equilíbrio, transformação e conexão com sua essência.
+          </p>
+          <p>
+            Também sou professor e ministro cursos de Baralho Cigano,
+            compartilhando todo o conhecimento e a experiência que adquiri ao
+            longo dos anos.
+          </p>
+          <p>
+            Seja por meio de uma consulta ou do ensino, meu objetivo é trazer
+            luz e direcionamento para quem cruza meu caminho.
+          </p>
+          <p>
+            Entre em contato comigo e venha descobrir o poder do Baralho Cigano.
+          </p>
+        </div>
+      </section>
 
-        <!-- Serviços -->
-        <section class="servicos">
-            <h2>Leituras e Orientações</h2>
+      <!-- Serviços -->
+      <section class="servicos" id="servicos" data-aos="fade-up">
+        <h2>Leituras e Orientações</h2>
+        <div class="categorias-container">
+          <!-- Tarô -->
+          <div class="servicos-categoria" data-aos="zoom-in">
+            <h3>Tarô</h3>
+            <ul>
+              <li>
+                <i class="icone-estrela"></i>Pergunta Avulsa:
+                <span>R$ 17,00</span>
+              </li>
+              <li>
+                <i class="icone-estrela"></i>3 Perguntas + 1 Conselho:
+                <span>R$ 35,00</span>
+              </li>
+              <li>
+                <i class="icone-estrela"></i>1 hora de consulta:
+                <span>R$ 122,00</span>
+              </li>
+            </ul>
 
-            <!-- Categoria: Tarô -->
-            <div class="servicos-categoria">
-                <h3>Tarô</h3>
-                <ul>
-                    <li><i class="icone-estrela"></i>Pergunta Avulsa: <span>R$ 17,00</span></li>
-                    <li><i class="icone-estrela"></i>3 Perguntas + 1 Conselho: <span>R$ 35,00</span></li>
-                    <li><i class="icone-estrela"></i>1 hora de consulta: <span>R$ 122,00</span></li>
-                </ul>
+            <h3>Métodos Específicos</h3>
+            <ul>
+              <li>
+                <i class="icone-estrela"></i>Antes de Me Envolver:
+                <span>R$ 33,00</span>
+              </li>
+              <li>
+                <i class="icone-estrela"></i>Templo de Afrodite:
+                <span>R$ 30,00</span>
+              </li>
+              <li>
+                <i class="icone-estrela"></i>Autoconhecimento:
+                <span>R$ 42,00</span>
+              </li>
+            </ul>
+          </div>
 
-                <h3>Métodos Específicos</h3>
-                <ul>
-                    <li><i class="icone-estrela"></i>Antes de Me Envolver: <span>R$ 33,00</span></li>
-                    <li><i class="icone-estrela"></i>Templo de Afrodite: <span>R$ 30,00</span></li>
-                    <li><i class="icone-estrela"></i>Autoconhecimento: <span>R$ 42,00</span></li>
-                </ul>
-            </div>
+          <!-- Baralho Cigano -->
+          <div
+            class="servicos-categoria"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <h3>Baralho Cigano</h3>
+            <ul>
+              <li>
+                <i class="icone-estrela"></i>Pergunta Avulsa:
+                <span>R$ 19,00</span>
+              </li>
+              <li>
+                <i class="icone-estrela"></i>3 Perguntas + 1 Conselho:
+                <span>R$ 37,00</span>
+              </li>
+              <li>
+                <i class="icone-estrela"></i>Análise profissional e financeira:
+                <span>R$ 65,00</span>
+              </li>
+              <li>
+                <i class="icone-estrela"></i>Mapeamento energético:
+                <span>R$ 80,00</span>
+              </li>
+              <li>
+                <i class="icone-estrela"></i>Jogo das 21 cartas:
+                <span>R$ 111,00</span>
+              </li>
+              <li>
+                <i class="icone-estrela"></i>Mesa Real: <span>R$ 154,00</span>
+              </li>
+            </ul>
+          </div>
 
-            <!-- Categoria: Baralho Cigano -->
-            <div class="servicos-categoria">
-                <h3>Baralho Cigano</h3>
-                <ul>
-                    <li><i class="icone-estrela"></i>Pergunta Avulsa: <span>R$ 19,00</span></li>
-                    <li><i class="icone-estrela"></i>3 Perguntas + 1 Conselho: <span>R$ 37,00</span></li>
-                    <li><i class="icone-estrela"></i>Análise profissional e financeira: <span>R$ 65,00</span></li>
-                    <li><i class="icone-estrela"></i>Mapeamento energético: <span>R$ 80,00</span></li>
-                    <li><i class="icone-estrela"></i>Jogo das 21 cartas: <span>R$ 111,00</span></li>
-                    <li><i class="icone-estrela"></i>Mesa Real: <span>R$ 154,00</span></li>
-                </ul>
-            </div>
-
-            <!-- Categoria: Baralho das Pombogiras -->
-            <div class="servicos-categoria">
-                <h3>Pacote ganga - Baralho das Pombogiras</h3>
-                <ul>
-                    <li><i class="icone-estrela"></i>3 Perguntas: <span>R$ 52,00</span></li>
-                    <li><i class="icone-estrela"></i>Análise Amorosa: <span>R$ 60,00</span></li>
-                    <li><i class="icone-estrela"></i>Análise profissional: <span>R$ 60,00</span></li>
-                    <li><i class="icone-estrela"></i>Mapeamento energético: <span>R$ 77,77</span></li>
-                    <li><i class="icone-estrela"></i>Mapeamento energético completo: <span>R$ 177,77</span></li>
-                    <li><i class="icone-estrela"></i>Pacote mensal: <span>R$ 377,00</span></li>
-                </ul>
-            </div>
-        </section>
+          <!-- Pombogiras -->
+          <div
+            class="servicos-categoria"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <h3>Pacote ganga - Baralho das Pombogiras</h3>
+            <ul>
+              <li>
+                <i class="icone-estrela"></i>3 Perguntas: <span>R$ 52,00</span>
+              </li>
+              <li>
+                <i class="icone-estrela"></i>Análise Amorosa:
+                <span>R$ 60,00</span>
+              </li>
+              <li>
+                <i class="icone-estrela"></i>Análise profissional:
+                <span>R$ 60,00</span>
+              </li>
+              <li>
+                <i class="icone-estrela"></i>Mapeamento energético:
+                <span>R$ 77,77</span>
+              </li>
+              <li>
+                <i class="icone-estrela"></i>Mapeamento energético completo:
+                <span>R$ 177,77</span>
+              </li>
+              <li>
+                <i class="icone-estrela"></i>Pacote mensal:
+                <span>R$ 377,00</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Rodapé -->
-    <footer class="rodape">
-        <p>&copy; 2025 Frequência de Ganga. Todos os direitos reservados.</p>
-        <p>Conecte-se nas redes sociais: <a href="#">Instagram</a> | <a href="#">Facebook</a></p>
+    <footer class="rodape" data-aos="fade-up">
+      <p>&copy; 2025 Frequência de Ganga. Todos os direitos reservados.</p>
+      <p>
+        Conecte-se nas redes sociais:
+        <a href="https://www.instagram.com/_frequenciadeganga/" target="_blank"
+          >Instagram</a
+        >
+      </p>
     </footer>
-</body>
+
+    <!-- Scripts -->
+    <script src="js/menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true,
+      });
+    </script>
+
+    <!-- tsParticles lib -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+
+    <script src="js/particles-config.js"></script>
+  </body>
 </html>

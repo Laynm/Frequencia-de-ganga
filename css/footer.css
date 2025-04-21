@@ -1,0 +1,20 @@
+/* Rodapé */
+footer.rodape {
+    background-color: #121315;
+    text-align: center;
+    padding: 20px 0;
+    color: #e4d1b9;
+}
+
+footer.rodape p {
+    margin: 5px 0;
+}
+
+footer.rodape a {
+    color: #e4d1b9;
+    text-decoration: none;
+}
+
+footer.rodape a:hover {
+    color: #f39c12;
+}

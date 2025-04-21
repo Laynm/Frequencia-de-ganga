@@ -1,0 +1,39 @@
+/* Fonte do Google */
+@import url('https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap');
+
+/* Estilo geral do corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    background-color: #121315;
+
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: #121315;
+
+}
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background: transparent;
+    pointer-events: none;
+}
+  
+  body::before {
+    content: '';
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #121315;
+    z-index: -1;
+}
+  

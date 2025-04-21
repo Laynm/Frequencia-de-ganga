@@ -1,0 +1,107 @@
+/* Seção de Leituras e Orientações */
+.servicos {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #500106, #121315);
+    color: #e4d1b9;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Coloca o título "Leituras e Orientações" em cima */
+    align-items: center; /* Centraliza o conteúdo da seção */
+}
+
+/* Título da seção de serviços */
+.servicos h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: #d4af37;
+    font-family: 'Mystery Quest', cursive;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7); /* Destaque com sombra suave */
+}
+
+/* Container para os blocos de Tarô, Baralho Cigano e Pombogira */
+.servicos .categorias-container {
+    display: flex;
+    justify-content: center; /* Garante que os blocos fiquem centralizados */
+    gap: 30px; /* Espaçamento entre os blocos */
+    width: 100%;
+}
+
+/* Categoria de serviços */
+.servicos-categoria {
+    width: 30%; /* Ajusta a largura para 30% */
+    margin-bottom: 30px; /* Espaçamento entre as categorias */
+    padding: 20px;
+    background-color: rgba(212, 175, 55, 0.1); /* Fundo dourado translúcido */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Sombra leve */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Efeito de hover nas categorias */
+.servicos-categoria:hover {
+    transform: scale(1.02); /* Aumenta um pouco o tamanho ao passar o mouse */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6); /* Destaque na sombra */
+}
+
+.servicos-categoria h3 {
+    padding: 10px;
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #d4af37;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Pequena sombra */
+}
+
+/* Lista de serviços */
+.servicos ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.servicos ul li {
+    background: rgba(255, 255, 255, 0.05); /* Fundo translúcido */
+    padding: 15px 20px;
+    font-size: 18px;
+    color: #e4d1b9;
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Borda sutil */
+    border-radius: 10px;
+    width: 250px; /* Largura fixa */
+    text-align: center;
+    transition: background 0.3s, color 0.3s, transform 0.3s;
+}
+
+.servicos ul li:hover {
+    background: rgba(212, 175, 55, 0.3); /* Destaque dourado */
+    color: #fff;
+    transform: translateY(-10px); /* Elevação */
+}
+
+/* Adicionando um detalhe visual */
+.servicos ul li::before {
+    content: '★'; /* Ícone de estrela */
+    font-size: 20px;
+    color: #d4af37;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Layout geral */
+.servicos .servicos-categoria {
+    max-width: 900px; /* Limita a largura */
+    margin: 0 auto; /* Centraliza */
+}
+
+.servicos ul li span {
+    display: block;
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #d4af37; /* Valor destacado */
+}
+
